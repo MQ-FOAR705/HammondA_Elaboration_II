@@ -1,0 +1,125 @@
+%--Packages
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{titling}
+\usepackage{fancyhdr} %--for fancy header/ footers
+\usepackage{tikz} %--for border in title page
+\usetikzlibrary{calc} %-- access to tikslibrary commands
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{verbatimbox}
+
+
+%--Parameters
+\title{Elaboration Document II}
+\author{Aaron Hammond\\43691455}
+\date{August 2019}
+\fancyhfoffset
+\fancy
+\definecolor{collink}{RGB}{45, 95, 140}
+\setcounter{tocdepth}{1}
+
+\hypersetup{
+colorlinks,
+linkcolor=collink,
+linktoc=all
+}
+
+%--Page Setup
+\pagestyle{fancy}
+\fancyhf{}
+
+\rhead{Elaboration Exercise II}
+\lhead{Digital Humanities}
+
+\fancyfoot[RE,RO]{Aaron Hammond | 43691455}
+\fancyfoot[LE,LO]{Page: \thepage}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+%--Commands
+
+\newcommand\HRule{\rule{\textwidth}{1pt}} %-- horizontal lines for formatting
+
+%--
+\begin{document}
+
+%--Title page
+
+\begin{titlepage}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \draw[line width = 4pt] ($(current page.north west) + (1in,-1in)$) rectangle ($(current page.south east) + (-1in,1in)$);
+\end{tikzpicture}
+
+\begin{center}
+\HRule\\[0.4cm]
+\huge{Elaboration Document II}\\[0.5cm]
+\huge{Aaron Hammond}\\
+\large{\today}\\[0.4cm]
+
+\HRule \\[1cm]
+\end{center}
+
+\begin{justify}
+\noindent This document is the second stage of of the elaboration process. It contains the steps and processes I fulfilled in order to achieve the project scope outlined in the first elaboration document. This document maintains the same structure as the previous, the steps are as follows:
+\end{justify}
+
+
+\def\contentsname{\empty} %--Remove contents header from toc
+\tableofcontents
+
+\end{titlepage}
+
+%--
+
+\section{Transcribe audio into plain text}
+
+\subsection{oTranscribe}
+As I attempted to download the FTW Transcriber I read a note that indicated that this software will not automatically transcribe audio as i had anticipated. It is a tool that enables the user to transcribe audio more easily. As a result i attempted to use oTranscriber in its place.
+
+According to reviews and feedback, these three options provide adequate transcribing features. Unfortunately oTranscribe and Alveo are browser-based and require the uploading of files for transcription. This could cause issues with privacy and security of my participators. FTW Transcriber appears to be the best option as it's downloadable and runs entirely locally on my PC.
+\section{Convert articles into simple text}
+The best pieces of software found for this step are:
+\begin{itemize}
+    \item \href{https://www.zamzar.com/}{Zamzar}
+    \item \href{https://unipdf.com/}{UniPDF}
+\end{itemize}
+Zamzar is an online file converter that could potentially fulfill my conversion needs. Howver I would first need to check the privacy policy of Macquarie Library to ensure that the conversion is not in breach of any agreement. The second option of UniPDF is locally stored software which appears highly rated and can convert files into rtf format. 
+
+\section{Create plain text files from field notes}
+As I write my fieldnotes into a program called Joplin, I can export my notes as PDF files which I can then use in one of the options above to convert them to RTF.\\
+\linebreak
+Alternatively I could copy the contents into wordpad and then save it as an RTF file.
+
+\section{Folder and file naming structure}
+In order to maintain the division of information types there will be three sibling folders named interviews, articles and fieldnotes. These three folders will sit below a parent folder named raw\\
+\linebreak
+Create a batch file in the raw folder that will rename each file in the three sub folders with I\_ or A\_ or F\_\\
+Batch file would read something like\\
+
+\small{
+\begin{verbatim}
+    cd interviews
+    Get-ChildItem -Exclude "I_*" | rename-item -NewName { "I_" + $_.Name }}
+    cd ..
+    cd articles
+    Get-ChildItem -Exclude "A_*" | rename-item -NewName { "A_" + $_.Name }}
+    cd ..
+    cd fieldnotes
+    Get-ChildItem -Exclude "F_*" | rename-item -NewName { "F_" + $_.Name }}
+\end{verbatim}
+}
+\section{Analyze text files}
+Some of the promising options for text analysis are as follows:
+\begin{itemize}
+    \item \href{https://www.g2.com/categories/text-analysis}{G2}
+    \item \href{https://www.laurenceanthony.net/software/antconc/}{AntConc}
+    \item \href{Voyant-tools.org}{Voyant Tools}
+\end{itemize}
+
+\noindent 
+Each of these options has it's own pros and cons. G2 is private software with a free version of the software, however this software sports the best features with the ability to create graphics. AntConc runs locally and is open source and supports multiple files simultaneously. Voyant Tools is a browser based application which requires the upload of data for computation. AntConc looks like the best option with potentially the use of G2 if graphic features are not hidden behind a paywall.
+\
+
+\end{document}
