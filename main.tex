@@ -78,7 +78,7 @@ linktoc=all
 %--
 
 \section{Transcribe audio into plain text}
-In this step i attempted to use the range of audio transcribers. While in future i will test Alveo's service. For the sake of this elaboration i manually transcribed using oTranscriber.
+In this step i attempted to use the range of audio transcribers. While in future i will test Alveo's service. For the sake of this elaboration i manually transcribed using oTranscriber. Manually transcribing wasn't as laborious as I had anticipated and depending on the success I have with Alveo, it's good to know that oTranscriber will be a viable backup plan.
 
 \subsection{FTW Transcriber}
 \intention{Download and use FTW Transcriber to automatically transcribe audio files.}
@@ -104,6 +104,7 @@ In this step i attempted to use the range of audio transcribers. While in future
 
 
 \section{Convert articles into simple text}
+This step of the project proved the most difficult due to the protections in place to prevent PDF files from being converted. While I was successful in converting one into a .doc file and copying that information into a txt file, I feel that a more simpler solution can be achieved. Perhaps a change in scope to only focus on the abstract instead of the whole document.
 \subsection{UniPDF}
 \intention{Convert a PDF into a .txt file}
 \action{Loaded UniPDF and imported PDF "Citizenship collective identity" and converted it}
@@ -125,7 +126,8 @@ As a result of the multiple step case with UniPDF I decided to try my other opti
 
 
 \section{Create plain text files from field notes}
-For the purposes of this project. Joplin's export format will work for this step in the process
+For the purposes of this project. Joplin's export format will work for this step in the process. The export file will be a jex file which can be simply changed to txt using a batch file without issue or worry. 
+
 \subsection{Joplin}
 \intention{Export notes from Joplin into a simple text format}
 \action{Right-click the note or library for export and selected .jex file}
@@ -157,6 +159,7 @@ For the purposes of this project. Joplin's export format will work for this step
 
 
 \section{Analyze text files}
+Analyzing the files turned out to be the most fruitful step in the process. The two tools I used below both worked remarkably. The only adjustment that I would like to make however is to add to my batch file so that all renamed files are moved to a singular folder for analysis to allow easier use of the Voyant Tool.
 
 \subsection{AntConc}
 \intention{Use AntConc to select all my sources and identify patterns}
@@ -164,7 +167,13 @@ For the purposes of this project. Joplin's export format will work for this step
 \result{I need to enter the word, theme or pattern i want to draw out from my sources. Still very good software, and identifying what i want to search for may be better. The software successfully identified what areas of each file contained my search term and identified where it could be found}
 
 \subsection{Voyant Tools}
-\action{}
+
+\intention{Use Voyant Tools to collectively analyze my collection of sources}
+\action{I moved all the files into a single directory and selected them all together in order to use the service}
+\result{The analysis provided was equipped with wordclouds, graphs and various means to identify themes throughout the sources.}
 \
+\newpage
+\section*{Conclusion}
+In total the plan appears sound. By using the process outline in my scoping document I was able to use various types of software and data exchange to convert all my data into a single-workable format. Organise those files within the specified folder structure. Add a prefix to each source type for quick and efficient identification within various interfaces. 
 
 \end{document}
