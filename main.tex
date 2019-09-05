@@ -18,7 +18,6 @@
 \fancy
 \definecolor{collink}{RGB}{45, 95, 140}
 \setcounter{tocdepth}{1}
-
 \hypersetup{
 colorlinks,
 linkcolor=collink,
@@ -40,6 +39,11 @@ linktoc=all
 %--Commands
 
 \newcommand\HRule{\rule{\textwidth}{1pt}} %-- horizontal lines for formatting
+
+\newcommand{\intention}[1]{\textbf{Intention:}{\textnormal\ #1} \newline}
+\newcommand{\action}[1]{\textbf{Action:}{\textnormal\ #1} \newline}
+\newcommand{\result}[1]{\textbf{Result:}{\textnormal\ #1} \newline}
+\newcommand{\solution}[1]{\textbf{Solution:}{\textnormal\ #1} \newline}
 
 %--
 \begin{document}
@@ -75,10 +79,29 @@ linktoc=all
 
 \section{Transcribe audio into plain text}
 
-\subsection{oTranscribe}
-As I attempted to download the FTW Transcriber I read a note that indicated that this software will not automatically transcribe audio as i had anticipated. It is a tool that enables the user to transcribe audio more easily. As a result i attempted to use oTranscriber in its place.
+\subsection{FTW Transcriber}
+\intention{Download and use FTW Transcriber to automatically transcribe audio files.}
+\action{I went to the website to download and read that this software will not automatically transcribe but is a tool to assist manually transcribing}
+\result{I downloaded it and kept it as a backup option}
 
-According to reviews and feedback, these three options provide adequate transcribing features. Unfortunately oTranscribe and Alveo are browser-based and require the uploading of files for transcription. This could cause issues with privacy and security of my participators. FTW Transcriber appears to be the best option as it's downloadable and runs entirely locally on my PC.
+\subsection{Alveo Audio Transcriber}
+
+\intention{Utilise the online service of Alveo for transcription.}
+\action{As this software coordinates with universities i logged in using my credentials in order to access the service}
+\result{Before i can use the service, my application must be approved. I cannot try this software, so I will look for another solution}
+
+\subsection{oTranscribe}
+
+\intention{Use the online service oTranscriber to automatically transcribe audio files.}
+\action{I discovered that this software was a tool to assist manual transcribing and not automatically as i previous thought}
+\result{In order to progress with the elaboration exercise i manually transcribed a short audio file using oTranscribe}
+
+\intention{Manually transcribe}
+\action{My test file type was .aac and in order to be able to use the service i needed to convert it (so i did using \url{https://www.media.io/})}
+\result{In order to progress with the elaboration exercise i manually transcribed a short .wav file using oTranscribe}
+
+
+
 \section{Convert articles into simple text}
 The best pieces of software found for this step are:
 \begin{itemize}
