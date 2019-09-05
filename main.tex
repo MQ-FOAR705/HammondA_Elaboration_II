@@ -99,39 +99,39 @@ In this step i attempted to use the range of audio transcribers. While in future
 
 \intention{Manually transcribe}
 \action{My test file type was .aac and in order to be able to use the service i needed to convert it (so i did using \url{https://www.media.io/})}
-\result{The process was actually quite easy. However it takes time and attention. The keyboard commands are easy and intuitive and the features such as speed and playback control are adequate. Lastly, export formats are varied and i exported to .txt}
+\result{The process was actually quite easy. However it takes time and attention. The keyboard commands are easy and intuitive and the features such as speed and playback control are adequate. Lastly, export formats are varied and i exported to .TXT}
 
 
 
 \section{Convert articles into simple text}
-This step of the project proved the most difficult due to the protections in place to prevent PDF files from being converted. While I was successful in converting one into a .doc file and copying that information into a txt file, I feel that a more simpler solution can be achieved. Perhaps a change in scope to only focus on the abstract instead of the whole document.
+This step of the project proved the most difficult due to the protections in place to prevent PDF files from being converted. While I was successful in converting one into a .doc file and copying that information into a TXT file, I feel that a more simpler solution can be achieved. Perhaps a change in scope to only focus on the abstract instead of the whole document.
 \subsection{UniPDF}
-\intention{Convert a PDF into a .txt file}
+\intention{Convert a PDF into a .TXT file}
 \action{Loaded UniPDF and imported PDF "Citizenship collective identity" and converted it}
 \result{The conversion was successful but in the text file itself there was only the meta data stored, no words from the article or abstract itself}
 
-\intention{Convert a PDF into a .txt file (#2)}
-\action{Loaded UniPDF and imported PDF "Russification in the baltic states" and converted it to .txt}
+\intention{Convert a PDF into a .TXT file (#2)}
+\action{Loaded UniPDF and imported PDF "Russification in the baltic states" and converted it to .TXT}
 \result{Again the conversion was successful but the contents were lacking anything more than the metadata}
 
 \intention{Convert a PDF into a .doc file}
 \action{Loaded UniPDF and imported PDF "Russification in the baltic states" and converted it to .doc}
-\result{Conversion was successful and created a 98mb doc file. The file had readable contents. I copied the contents into a .txt file and saved it successfully}
+\result{Conversion was successful and created a 98mb doc file. The file had readable contents. I copied the contents into a .TXT file and saved it successfully}
 
 \subsection{Zamzar}
 As a result of the multiple step case with UniPDF I decided to try my other option.\\
-\intention{Convert a PDF to .txt using Zamzar}
+\intention{Convert a PDF to .TXT using Zamzar}
 \action{Uploaded the "Russification in the baltic states" pdf file}
 \result{The document could not be converted due to DRM software that prevents it. For the elaboration process will continue with the results from UniPDF}
 
 
 \section{Create plain text files from field notes}
-For the purposes of this project. Joplin's export format will work for this step in the process. The export file will be a jex file which can be simply changed to txt using a batch file without issue or worry. 
+For the purposes of this project. Joplin's export format will work for this step in the process. The export file will be a jex file which can be simply changed to TXT using a batch file without issue or worry. 
 
 \subsection{Joplin}
 \intention{Export notes from Joplin into a simple text format}
 \action{Right-click the note or library for export and selected .jex file}
-\result{The file created is simple text and editable with notepad. Only addition is it includes a header that must work with Joplin in order to import correctly. Changed file to a .txt file and is still read-able}
+\result{The file created is simple text and editable with notepad. Only addition is it includes a header that must work with Joplin in order to import correctly. Changed file to a .TXT file and is still read-able}
 
 \section{Folder and file naming structure}
 \subsection{Folder Structure (in Windows)}
@@ -172,8 +172,9 @@ Analyzing the files turned out to be the most fruitful step in the process. The 
 \action{I moved all the files into a single directory and selected them all together in order to use the service}
 \result{The analysis provided was equipped with wordclouds, graphs and various means to identify themes throughout the sources.}
 \
-\newpage
 \section*{Conclusion}
-In total the plan appears sound. By using the process outline in my scoping document I was able to use various types of software and data exchange to convert all my data into a single-workable format. Organise those files within the specified folder structure. Add a prefix to each source type for quick and efficient identification within various interfaces. 
+In total the plan appears sound. By using the process outline in my scoping document I was able to use various types of software and data exchange to convert all my data into a single-workable format. Organise those files within the specified folder structure. Add a prefix to each source type for quick and efficient identification within various interfaces. Then used those files in two types of software for different results. Voyant Tools can be used to identify themes throughout pieces of work. AntConc can be used to search for particular words, phrases or terms throughout bodies of work. In total the project was a success.\\
+\newline
+The improvements which could be added is streamlining some of the steps. The conversion from PDF to TXT file is the most laborious and difficult step. In future only focusing on the abstract of the document may be the most intuitive solution. Other additional steps can be solved by adding to the batch file. In order to change the filetype of the fieldnotes export from JEX to TXT, additions can be made to the batch file. Additionally, the moving of all TXT files into a single location should be added to the batch file.  
 
 \end{document}
